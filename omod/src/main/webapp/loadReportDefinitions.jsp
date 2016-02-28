@@ -2,7 +2,8 @@
 <%@ include file="/WEB-INF/template/header.jsp"%>
 
 <%@ include file="template/localHeader.jsp"%>
-
+<div class="row">
+    <div class="col-md-12">
 <form class="form-group" action="loadReportDefinitions.form" method="post" enctype="multipart/form-data">
     <div>
         <b class="boxHeader"><spring:message code="dhisreport.uploadReport" /></b>
@@ -32,5 +33,7 @@
         </div>
     </div>
 </form>
+    </div>
+</div>
 
 <%@ include file="/WEB-INF/template/footer.jsp"%>

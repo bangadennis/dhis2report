@@ -5,7 +5,7 @@
 
 <h3><td><spring:message code="dhisreport.syncReportsTitle" /></td></h3>
 <div class="row">
-    <div class="col-md-12"></div>
+    <div class="col-md-12">
 <table class="table table-striped">
     <thead style="background-color: #1AAC9B; color: white; padding: 2px;">
         <tr>
@@ -32,6 +32,7 @@
          -->
     </tbody>
 </table>
+        </div>
 </div>
 
 <%@ include file="/WEB-INF/template/footer.jsp"%>
