@@ -17,11 +17,11 @@
         <tbody>
             <tr>
                 <td><spring:message code="dhisreport.dhis2URL" /></td>
-                <td><input class="form-control" required name="url" type="text" size="30" value="${dhis2Server.url}" /></td>
+                <td><input class="form-control" required name="url" type="text" size="30" placeholder="dhis2 url" value="${dhis2Server.url}" /></td>
             </tr>
             <tr>
                 <td><spring:message code="dhisreport.dhis2UserName" /></td>
-                <td><input class="form-control" required name="username" type="text" size="20" value="${dhis2Server.username}" /></td>
+                <td><input class="form-control" required name="username" type="text" size="20" placeholder="dhis2username" value="${dhis2Server.username}" /></td>
             </tr>
             <tr>
                 <td><spring:message code="dhisreport.dhis2Password" /></td>
