@@ -149,7 +149,7 @@ function applyWeeklyHighlight() {
 <h3><spring:message code="dhisreport.reportDefinitionFor" /> ${reportDefinition.name}</h3>
 
 <form action="executeReport.form" method="post">
-    <table>
+    <table class="table table-striped">
        <%--  <tr>
             <td><spring:message code="dhisreport.Location" /></td>
             <td>
@@ -171,10 +171,10 @@ function applyWeeklyHighlight() {
 			</tr> 
         <tr>
             <td><spring:message code="dhisreport.Date" /></td>
-            <td><input type="text" name="date" id="monthpicker"/></td>
+            <td><input class="form-control" type="text" name="date" id="monthpicker"/></td>
         </tr>
         <tr>                   
-            <td /><td><select name="resultDestination">
+            <td /><td><select class="form-control" name="resultDestination">
                     <option value="preview"><spring:message code="dhisreport.Preview" /></option>
                     <c:if test="${not empty dhis2Server}">
                         <option value="post"><spring:message code="dhisreport.postToDHIS" /></option>
@@ -185,7 +185,7 @@ function applyWeeklyHighlight() {
         <tr>
             <td />
             <td>
-                <input type="submit" value="<spring:message code="dhisreport.Generate" />" />
+                <input class="btn btn-success" type="submit" value="<spring:message code="dhisreport.Generate" />" />
             </td>
         </tr>
 

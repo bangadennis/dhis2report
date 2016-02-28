@@ -8,7 +8,7 @@
 <c:if test="${not empty aggregatedValues.dataValueSet}">
 <h3>------------------------------------------------------------------------</h3>
     <div>
-        <table>
+        <table class="table">
             <tr><td><spring:message code="dhisreport.dataSet" />: </td><td>${aggregatedValues.dataValueSet.dataSet}</td></tr>
             <tr><td><spring:message code="dhisreport.orgUnit" />: </td><td>${aggregatedValues.dataValueSet.orgUnit}</td></tr>
             <tr><td><spring:message code="dhisreport.period" />: </td><td>${aggregatedValues.dataValueSet.period}</td></tr>
@@ -25,7 +25,7 @@
      -->
      <br>
 <div>
-	<table style="width:600px">
+	<table style="width:600px" class="table table-striped">
 	<tr>
 	<th>DataElement Name</th>
 	<th>DataElement Code</th>		
@@ -46,7 +46,7 @@
 <c:if test="${not empty aggregatedValues.importSummary}">
     
     <div>
-        <table>
+        <table class="table table-striped table-responsive">
             <tr><td><spring:message code="dhisreport.status" />; </td><td>${aggregatedValues.importSummary.status}</td></tr>
             <tr><td><spring:message code="dhisreport.description" />: </td><td>${aggregatedValues.importSummary.description}</td></tr>
             <tr><td><spring:message code="dhisreport.dataValueCount" />: </td><td>${aggregatedValues.importSummary.dataValueCount}</td></tr>

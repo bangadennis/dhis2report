@@ -6,7 +6,7 @@
 <h3><spring:message code="dhisreport.importSumary" /></h3>
 
 <c:if test="${not empty importSummary}">
-    <table>
+    <table class="table table-striped table-responsive">
         <tr><td><spring:message code="dhisreport.status" />: </td><td>${importSummary.status}</td></tr>
         <tr><td><spring:message code="dhisreport.description" />: </td><td>${importSummary.description}</td></tr>
         <tr><td><spring:message code="dhisreport.dataValueCount" />: </td><td>${importSummary.dataValueCount}</td></tr>

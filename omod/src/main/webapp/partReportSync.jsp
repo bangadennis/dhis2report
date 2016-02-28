@@ -4,7 +4,7 @@
 <%@ include file="template/localHeader.jsp"%>
 <%@ include file="./resources/js/js_css.jsp" %>
 <h3><spring:message code="dhisreport.reportDefinitions" /></h3>
-<form method="post">
+<form method="post" class="form-group">
     <c:forEach var="reportDefinition" items="${reportDefinitions}">
         <tr>
         <input type="checkbox" name="reportids" value="${reportDefinition.id}"> ${reportDefinition.name}<br>
@@ -13,7 +13,7 @@
     <c:if test="${ fn:length(reportDefinitions) == 0 }">
         <spring:message code="general.none" />
     </c:if>
-    <input type="submit" value="Submit">
+    <input class="btn btn-success" type="submit" value="Submit">
 </form>
 
 

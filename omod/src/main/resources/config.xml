@@ -57,7 +57,7 @@
 	
 	<globalProperty>
 		<property>${project.parent.artifactId}.dhis2URL </property>
-		<defaultValue>http://httpbin.org/post</defaultValue>
+		<defaultValue>http://hiskenya.org/post</defaultValue>
 		<description>
 			DHIS2 URL where the report has to be sent. 
 		</description>

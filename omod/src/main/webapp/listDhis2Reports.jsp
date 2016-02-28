@@ -35,9 +35,10 @@ $(document).ready(function(){
 });
 </script>
 
-
+<div class="row">
+    <div class="col-md-12">
 <h3><spring:message code="dhisreport.reportDefinitions" /></h3>
-<table>
+<table class="table table-responsive table-striped">
 
     <c:forEach var="reportDefinition" items="${reportDefinitions}">
     <c:set var="flag" value ="true"/>
@@ -82,6 +83,8 @@ $(document).ready(function(){
         <spring:message code="general.none" />
     </c:if>
 </table>
+    </div>
+</div>
 
 
 <%@ include file="/WEB-INF/template/footer.jsp" %>
