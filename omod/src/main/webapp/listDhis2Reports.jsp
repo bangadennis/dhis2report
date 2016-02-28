@@ -64,10 +64,10 @@
                             <td id="serial"></td>
                             <td><a href="editReportDefinition.form?reportDefinition_id=${reportDefinition.id}"
                                    style="color:white">${reportDefinition.name}</a>
-                            <td><a href="setupReport.form?reportDefinition_id=${reportDefinition.id}"
+                            <td><a class="btn btn-primary" setupReport.form?reportDefinition_id=${reportDefinition.id}"
                                    style="color:white"><spring:message code="dhisreport.Export"/></a></td>
-                            <td><a onclick="REPORTDEFINITION.deleteReportDefinition(${reportDefinition.id})"
-                                   style="color:white"><spring:message code="dhisreport.Delete"/></a>
+                            <td><a class="btn btn-danger" onclick="REPORTDEFINITION.deleteReportDefinition(${reportDefinition.id})"
+                                   style="color:white"><spring:message code="dhisreport.Delete"/> </a>
                         </tr>
                     </c:when>
 
@@ -76,10 +76,10 @@
                             <td id="serial"></td>
                             <td>
                                 <a href="editReportDefinition.form?reportDefinition_id=${reportDefinition.id}">${reportDefinition.name}</a>
-                            <td><a href="setupReport.form?reportDefinition_id=${reportDefinition.id}"><spring:message
+                            <td><a class="btn btn-primary" href="setupReport.form?reportDefinition_id=${reportDefinition.id}"><spring:message
                                     code="dhisreport.Export"/></a></td>
                             <td>
-                                <a onclick="REPORTDEFINITION.deleteReportDefinition(${reportDefinition.id})"><spring:message
+                                <a class="btn btn-danger" onclick="REPORTDEFINITION.deleteReportDefinition(${reportDefinition.id})"><spring:message
                                         code="dhisreport.Delete"/></a>
                         </tr>
                     </c:otherwise>

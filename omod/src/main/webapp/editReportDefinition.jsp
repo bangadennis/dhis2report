@@ -75,7 +75,7 @@
                                         id="reportDefinition_query${dataValueTemplate.id }">${dataValueTemplate.query}</pre>
                             </i></td>
 
-                            <td><a
+                            <td><a class="btn btn-primary"
                                     onclick="REPORTDEFINITION.edit(${dataValueTemplate.id })"
                                     id="reportDefinition_edit${dataValueTemplate.id }"><spring:message
                                     code="dhisreport.Edit"/></a> <span
